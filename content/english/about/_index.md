@@ -1,7 +1,7 @@
 ---
-title: "Meetween"
-meta_title: "Meetween - About"
-description: "Meetween - About"
+title: "About Meetween"
+meta_title: "About"
+description: "About"
 image: "/images/logo.png"
 draft: false
 ---
@@ -15,4 +15,3 @@ Meetween aims at building foundational AI technologies that allow seamless integ
 As part of Meetween’s key commitments to the European Commission laid out in our roadmap, the consortium will develop and release three generations of a large multi-modal AI foundation model for speech, SpeechLMM, and a large, novel audiovisual speech dataset usable for varied research and commercial applications. Significantly, Meetween will release and licence these foundation models and datasets openly to the benefit of business, researchers and end users in Europe, the Republic of Türkiye and beyond. 
 
 Overall, Meetween seeks to foster and facilitate business collaboration throughout the European Union and Republic of Türkiye by providing real-time machine-learning-powered speech-to-speech translation and face dubbing, summarisation and virtual assistant services for online meetings. It seeks to do this whilst defending a European vision for AI with regard to safety, privacy, social and ethical approaches, anchored in Europe’s regulations, data standards and shared initiatives, and operationalised in engineering solutions.
-
