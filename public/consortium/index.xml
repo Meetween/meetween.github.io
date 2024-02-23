@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Consortium Partners on Meetween</title>
+    <link>https://meetween.github.io/consortium/</link>
+    <description>Recent content in Consortium Partners on Meetween</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://meetween.github.io/consortium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fondazione Bruno Kessler</title>
+      <link>https://meetween.github.io/consortium/fbk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://meetween.github.io/consortium/fbk/</guid>
+      <description>Fondazione Bruno Kessler (FBK) is a multidisciplinary research institution specializing in the fields of technology, innovation, the humanities and social sciences, based in Trento, Italy.</description>
+    </item>
+    <item>
+      <title>Karlsruhe Institute of Technology</title>
+      <link>https://meetween.github.io/consortium/kit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://meetween.github.io/consortium/kit/</guid>
+      <description>The Karlsruhe Institute of Technology (KIT) is a leading research university in Europe, focusing on crucial areas such as environmental-friendly energy generation and internet security.</description>
+    </item>
+    <item>
+      <title>Template</title>
+      <link>https://meetween.github.io/consortium/template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://meetween.github.io/consortium/template/</guid>
+      <description>Consortium partner description here. Anything after the first period appears only on the partner page.</description>
+    </item>
+    <item>
+      <title>Translated</title>
+      <link>https://meetween.github.io/consortium/translated/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://meetween.github.io/consortium/translated/</guid>
+      <description>Translated is a global translation and localization company headquartered in Rome, Italy.</description>
+    </item>
+  </channel>
+</rss>
