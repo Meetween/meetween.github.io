@@ -1,8 +1,6 @@
 ---
 title: Translated
-# email: 
 image: "/partner_logos/TLT/jpg/Translated_Mark_black_rgb.jpg"
-# description: this is meta description
 social:
   - name: twitter
     icon: fa-brands fa-twitter
