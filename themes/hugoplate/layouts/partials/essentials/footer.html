@@ -48,8 +48,13 @@
     </div>
   </div>
   <div class="border-border dark:border-darkmode-border border-t py-7">
-    <div class="text-light dark:text-darkmode-light container text-center">
-      <p>
+    <div
+        class="text-light dark:text-darkmode-light container text-center">
+      <img
+          src='{{- (resources.Get "images/eu_flag.jpg").RelPermalink -}}'
+          alt="EU flag"
+          style="max-width: 3.5em; height: auto; display: inline-block;"/>
+      <p style="display: inline-block; padding: 0.5em;">
         {{ site.Params.copyright | markdownify }}
       </p>
     </div>
