@@ -14,12 +14,12 @@ weight = 2
 [[main]]
 name = "Project Description"
 url = "about/"
-weight = 3
+weight = 2
 
-# [[main]]
-# name = "Publications"
-# url = "publications/"
-# weight = 2
+[[main]]
+name = "Publications"
+url = "publications/"
+weight = 3
 
 # [[main]]
 # name = "Blog"
