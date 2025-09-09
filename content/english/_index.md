@@ -24,4 +24,23 @@ features:
       label: "Get Started Now"
       link: "#"
 
+#   - title: "Meetween Butler & Agentar"
+#     image: "/icons/icons_assembled.svg"
+#     content: "Meetween's core objectives centre on creation and dissemination of open-source AI-based models and datasets aimed at enhancing human-human and human-machine interaction."
+#     bulletpoints:
+#       - "**SpeechLMM**: a multilingual AI model focussed on speech that supports text, audio and video both as inputs and outputs"
+#       - "**Mumospee**: the multimodal and multilingual dataset used for the training of SpeechLMM, with coverage of all official EU languages."
+#       - "20+ Specialised Downstream Models through adaptation of SpeechLMM targeting common use cases like speech translation or transcription."
+#       - "**SPEECHM**: a suite of AI metrics that can be used to measure and track the performance of the task-specific models."
+
+
+#   - title: "Wider Impact"
+#     image: "/icons/icons_assembled.svg"
+#     content: ""
+#     bulletpoints:
+#       - "Human-centred and ethical development of digital and industrial technologies, empowering end-users and workers, and supporting social innovation"
+#       - "World-class technologies that are beneficial to humans individually, organisationally and societally, and that adhere to European values"
+#       - "Trustworthy digital environment giving users control over their data and identity while upholding European values, facilitating new social and business models"
+#       - "Gain industrial leadership in eXtended Reality technologies and immersive environments while also ensuring privacy, ethics and inclusiveness"
+#       - "Standardisation as a factor for valorising EU R&I projects, favouring the applicability of new technologies on a larger scale and promoting their uptake"
 ---

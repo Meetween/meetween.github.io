@@ -21,6 +21,11 @@ name = "Publications"
 url = "publications/"
 weight = 3
 
+[[main]]
+name = "Dissemination"
+url = "disseminations/"
+weight = 4
+
 # [[main]]
 # name = "Blog"
 # url = "blog/"
