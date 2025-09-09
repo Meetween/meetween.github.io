@@ -23,7 +23,7 @@ weight = 3
 
 [[main]]
 name = "Dissemination"
-url = "disseminations/"
+url = "dissemination/"
 weight = 4
 
 # [[main]]
