@@ -53,7 +53,7 @@ weight = 4
 # url = "404/"
 
 
-# # footer menu
+# footer menu
 # [[footer]]
 # name = "About"
 # url = "about/"
@@ -64,7 +64,7 @@ weight = 4
 # url = "elements/"
 # weight = 2
 
-# [[footer]]
-# name = "Privacy Policy"
-# url = "privacy-policy/"
-# weight = 3
+[[footer]]
+name = "Privacy Policy"
+url = "privacy-policy/"
+weight = 3

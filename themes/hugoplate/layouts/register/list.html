@@ -6,14 +6,38 @@
       <div class="md:col-10 lg:col-6 mx-auto">
         <form action="{{ site.Params.contact_form_action }}" method="POST">
           <div class="mb-6">
-            <label for="name" class="form-label"> Full Name <span class="text-red-500">*</span>
+            <label for="first_name" class="form-label"> First Name <span class="text-red-500">*</span>
             </label>
-            <input id="name" name="name" class="form-input" placeholder="John Doe" type="text" />
+            <input id="first_name" name="first_name" class="form-input" placeholder="John" type="text" required />
+          </div>
+          <div class="mb-6">
+            <label for="last_name" class="form-label"> Last Name <span class="text-red-500">*</span>
+            </label>
+            <input id="last_name" name="last_name" class="form-input" placeholder="Doe" type="text" required />
           </div>
           <div class="mb-6">
             <label for="email" class="form-label"> Working Mail <span class="text-red-500">*</span>
             </label>
-            <input id="email" name="email" class="form-input" placeholder="john.doe@email.com" type="email" />
+            <input id="email" name="email" class="form-input" placeholder="john.doe@email.com" type="email" required />
+          </div>
+          <div class="mb-6 flex items-start gap-3">
+            <input
+              id="privacy_policy_consent"
+              name="privacy_policy_consent"
+              class="mt-1"
+              type="checkbox"
+              value="accepted"
+              required />
+            <label for="privacy_policy_consent" class="form-label mb-0">
+              I have read and accept the
+              <a
+                href="{{ "privacy-policy/" | relLangURL }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-600 underline">
+                privacy policy
+              </a>
+            </label>
           </div>
           <!-- <div class="mb-6">
               <label for="message" class="form-label">
@@ -26,7 +50,7 @@
                 placeholder="Message goes here..."
                 rows="8"></textarea>
             </div> -->
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">Register</button>
         </form>
       </div>
     </div>
