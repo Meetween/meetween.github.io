@@ -1,13 +1,135 @@
 {{ define "main" }}
 {{ partial "page-header" . }}
+{{ $publications := site.Data.publications }}
 <section class="section-sm">
   <div class="container">
     <div class="row justify-center">
-      <div class="md:col-10 lg:col-7">
-        <!-- <h2 class="h3 mb-6">{{ .Title }}</h2> -->
-        <!-- {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mx-auto mb-6" "Size" "324x81") }} -->
-        <div class="content">{{ .Content }}</div>
+      <div class="md:col-10 lg:col-9 xl:col-8">
+        <div class="publications-page">
+          <div class="content">
+            {{ .Content }}
+          </div>
+
+          <div class="pub-legend">
+            <div class="pub-legend-item">
+              <div class="pub-legend-dot dot-conf"></div>
+              <span>Conference paper</span>
+            </div>
+            <div class="pub-legend-item">
+              <div class="pub-legend-dot dot-journal"></div>
+              <span>Journal article</span>
+            </div>
+            <div class="pub-legend-item">
+              <div class="pub-legend-dot dot-preprint"></div>
+              <span>Preprint</span>
+            </div>
+            <div class="pub-legend-item">
+              <div class="pub-legend-dot dot-award"></div>
+              <span>Award / press</span>
+            </div>
+            <div class="pub-legend-item">
+              <div class="pub-legend-dot dot-other"></div>
+              <span>Other</span>
+            </div>
+          </div>
+
+          <div class="pub-total-count" id="publications-total">
+            {{ len $publications }} entries
+          </div>
+
+          <div class="pub-controls" aria-label="Publication filters">
+            <button class="pub-filter-btn active" type="button" data-filter="all">All</button>
+            <button class="pub-filter-btn" type="button" data-filter="conf">Conference papers</button>
+            <button class="pub-filter-btn" type="button" data-filter="journal">Journal articles</button>
+            <button class="pub-filter-btn" type="button" data-filter="preprint">Preprints</button>
+            <button class="pub-filter-btn" type="button" data-filter="award">Award / press</button>
+            <button class="pub-filter-btn" type="button" data-filter="other">Other</button>
+          </div>
+
+          <div id="publications-list"></div>
+        </div>
       </div>
     </div>
   </div>
-</section> {{ end }}
+</section>
+
+<script>
+  const publicationsData = {{ $publications | jsonify | safeJS }};
+  let currentPublicationFilter = "all";
+
+  const badgeMap = {
+    conf: { label: "Conference", className: "v-conf" },
+    journal: { label: "Journal", className: "v-journal" },
+    preprint: { label: "Preprint", className: "v-preprint" },
+    award: { label: "Award", className: "v-award" },
+    other: { label: "Other", className: "v-other" }
+  };
+
+  const sortedPublications = [...publicationsData].sort((a, b) => {
+    if (a.year !== b.year) return b.year - a.year;
+    return b.source_order - a.source_order;
+  });
+
+  function publicationTitleHtml(publication) {
+    const title = publication.title;
+    if (!publication.url) return title;
+    return `<a href="${publication.url}" target="_blank" rel="noopener">${title}</a>`;
+  }
+
+  function publicationMetaHtml(publication) {
+    const parts = [];
+    if (publication.authors) parts.push(`<div class="pub-authors">${publication.authors}</div>`);
+    if (publication.venue) parts.push(`<div class="pub-venue-text">${publication.venue}</div>`);
+    return parts.join("");
+  }
+
+  function renderPublications() {
+    const filtered = currentPublicationFilter === "all"
+      ? sortedPublications
+      : sortedPublications.filter((publication) => publication.type === currentPublicationFilter);
+
+    document.getElementById("publications-total").textContent =
+      `${filtered.length} ${filtered.length === 1 ? "entry" : "entries"}`;
+
+    const years = [...new Set(filtered.map((publication) => publication.year))];
+    const list = document.getElementById("publications-list");
+    list.innerHTML = "";
+
+    years.forEach((year) => {
+      const yearItems = filtered.filter((publication) => publication.year === year);
+      const yearGroup = document.createElement("section");
+      yearGroup.className = "pub-year-group";
+      yearGroup.innerHTML = `
+        <div class="pub-year-label">
+          <span>${year}</span>
+          <span class="pub-year-count">${yearItems.length}</span>
+        </div>
+        ${yearItems.map((publication) => {
+          const badge = badgeMap[publication.type] || badgeMap.preprint;
+          return `
+            <article class="pub-item">
+              <span class="pub-badge ${badge.className}">${badge.label}</span>
+              <div class="pub-body">
+                <div class="pub-title">${publicationTitleHtml(publication)}</div>
+                ${publicationMetaHtml(publication)}
+              </div>
+            </article>
+          `;
+        }).join("")}
+      `;
+      list.appendChild(yearGroup);
+    });
+  }
+
+  document.querySelectorAll(".pub-filter-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+      document.querySelectorAll(".pub-filter-btn").forEach((other) => other.classList.remove("active"));
+      button.classList.add("active");
+      currentPublicationFilter = button.dataset.filter;
+      renderPublications();
+    });
+  });
+
+  renderPublications();
+</script>
+{{ end }}

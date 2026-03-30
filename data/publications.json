@@ -1,0 +1,596 @@
+[
+  {
+    "source_order": 1,
+    "year": 2024,
+    "type": "conf",
+    "title": "Analyzing the Feature Extractor Networks for Face Image Synthesis",
+    "authors": "Erdi Sarıtaş, Hazım Kemal Ekenel",
+    "venue": "IEEE FG 2024 Workshop",
+    "url": "https://www.catalyzex.com/paper/analyzing-the-feature-extractor-networks-for"
+  },
+  {
+    "source_order": 2,
+    "year": 2024,
+    "type": "conf",
+    "title": "Quality Estimation with k-nearest Neighbors and Automatic Evaluation for Model-specific Quality Estimation",
+    "authors": "Tu Anh Dinh, Tobias Palzer, Jan Niehues",
+    "venue": "EAMT 2024",
+    "url": "https://aclanthology.org/2024.eamt-1.14/"
+  },
+  {
+    "source_order": 3,
+    "year": 2024,
+    "type": "conf",
+    "title": "Audio-Visual Speech Representation Expert for Enhanced Talking Face Video Generation and Evaluation",
+    "authors": "Dogucan Yaman, Fevziye Irem Eyiokur, et al.",
+    "venue": "CVPRW 2024",
+    "url": "https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/html/Yaman_Audio-Visual_Speech_Representation_Expert_for_Enhanced_Talking_Face_Video_Generation_CVPRW_2024_paper.html"
+  },
+  {
+    "source_order": 4,
+    "year": 2024,
+    "type": "award",
+    "title": "Speech Translation with Speech Foundation Models and Large Language Models: What is There and What is Missing",
+    "authors": "Marco Gaido, Sara Papi, Matteo Negri, Luisa Bentivogli",
+    "venue": "ACL 2024 Outstanding Paper Award and Senior Area Chair Award",
+    "url": "https://howto.fbk.eu/en/comunicazioni/brand-new-award-mt-unit-2/"
+  },
+  {
+    "source_order": 5,
+    "year": 2024,
+    "type": "conf",
+    "title": "Speech Translation with Speech Foundation Models and Large Language Models: What is There and What is Missing",
+    "authors": "Marco Gaido, Sara Papi, Matteo Negri, Luisa Bentivogli",
+    "venue": "ACL 2024 Main",
+    "url": "https://aclanthology.org/2024.acl-long.789/"
+  },
+  {
+    "source_order": 6,
+    "year": 2024,
+    "type": "conf",
+    "title": "Decoupled Vocabulary Learning Enables Zero-Shot Translation from Unseen Languages",
+    "authors": "Carlos Mullov, Quan Pham, Alexander Waibel",
+    "venue": "ACL 2024 Main",
+    "url": "https://aclanthology.org/2024.acl-long.362/"
+  },
+  {
+    "source_order": 7,
+    "year": 2024,
+    "type": "conf",
+    "title": "StreamAtt: Direct Streaming Speech-to-Text Translation with Attention-based Audio History Selection",
+    "authors": "Sara Papi, Marco Gaido, Matteo Negri, Luisa Bentivogli",
+    "venue": "ACL 2024 Main",
+    "url": "https://aclanthology.org/2024.acl-long.202/"
+  },
+  {
+    "source_order": 8,
+    "year": 2024,
+    "type": "conf",
+    "title": "Findings of the IWSLT 2024 Evaluation Campaign",
+    "authors": "Ibrahim Said Ahmad, Antonios Anastasopoulos, Ondřej Bojar, Claudia Borg, Marine Carpuat, Roldano Cattoni, Mauro Cettolo, William Chen, Qianqian Dong, Marcello Federico, Barry Haddow, Dávid Javorský, Mateusz Krubiński, Tsz Kin Lam, Xutai Ma, Prashant Mathur, Evgeny Matusov, Chandresh Maurya, John McCrae, Kenton Murray, Satoshi Nakamura, Matteo Negri, Jan Niehues, Xing Niu, Atul Kr. Ojha, John Ortega, Sara Papi, Peter Polák, Adam Pospíšil, Pavel Pecina, Elizabeth Salesky, Nivedita Sethiya, Balaram Sarkar, Jiatong Shi, Claytone Sikasote, Matthias Sperber, Sebastian Stüker, Katsuhito Sudoh, Brian Thompson, Alex Waibel, Shinji Watanabe, Patrick Wilken, Petr Zemánek, Rodolfo Zevallos",
+    "venue": "IWSLT 2024",
+    "url": "https://aclanthology.org/2024.iwslt-1.1/"
+  },
+  {
+    "source_order": 9,
+    "year": 2024,
+    "type": "conf",
+    "title": "Blending LLMs into Cascaded Speech Translation: KIT's Offline Speech Translation System for IWSLT 2024",
+    "authors": "Sai Koneru, Thai Binh Nguyen, Ngoc-Quan Pham, Danni Liu, Zhaolin Li, Alexander Waibel, Jan Niehues",
+    "venue": "IWSLT 2024",
+    "url": "https://aclanthology.org/2024.iwslt-1.24/"
+  },
+  {
+    "source_order": 10,
+    "year": 2024,
+    "type": "conf",
+    "title": "Recent Highlights in Multilingual and Multimodal Speech Translation",
+    "authors": "Danni Liu, Jan Niehues",
+    "venue": "IWSLT 2024",
+    "url": "https://aclanthology.org/2024.iwslt-1.29/"
+  },
+  {
+    "source_order": 11,
+    "year": 2024,
+    "type": "conf",
+    "title": "SimulSeamless: FBK at IWSLT 2024 Simultaneous Speech Translation",
+    "authors": "Sara Papi, Marco Gaido, Matteo Negri, Luisa Bentivogli",
+    "venue": "IWSLT 2024",
+    "url": "https://aclanthology.org/2024.iwslt-1.11/"
+  },
+  {
+    "source_order": 12,
+    "year": 2024,
+    "type": "conf",
+    "title": "FBK@IWSLT Test Suites Task: Gender Bias evaluation with MuST-SHE",
+    "authors": "Beatrice Savoldi, Marco Gaido, Matteo Negri, Luisa Bentivogli",
+    "venue": "IWSLT 2024",
+    "url": "https://aclanthology.org/2024.iwslt-1.10/"
+  },
+  {
+    "source_order": 13,
+    "year": 2024,
+    "type": "conf",
+    "title": "Audio-driven Talking Face Generation with Stabilized Synchronization Loss",
+    "authors": "Dogucan Yaman, Fevziye Irem Eyiokur, et al.",
+    "venue": "ECCV 2024",
+    "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/2950_ECCV_2024_paper.php"
+  },
+  {
+    "source_order": 14,
+    "year": 2024,
+    "type": "conf",
+    "title": "MOSEL: 950,000 Hours of Speech Data for Open-Source Speech Foundation Model Training on EU Languages",
+    "authors": "Marco Gaido*, Sara Papi*, Luisa Bentivogli, Alessio Brutti, Mauro Cettolo, Roberto Gretter, Marco Matassoni, Mohamed Nabih, Matteo Negri",
+    "venue": "EMNLP 2024 Main",
+    "url": "https://aclanthology.org/2024.emnlp-main.771/"
+  },
+  {
+    "source_order": 15,
+    "year": 2024,
+    "type": "conf",
+    "title": "Optimizing Rare Word Accuracy in Direct Speech Translation with a Retrieval-and-Demonstration Approach",
+    "authors": "Siqi Li*, Danni Liu*, Jan Niehues",
+    "venue": "EMNLP 2024 Main",
+    "url": "https://aclanthology.org/2024.emnlp-main.708/"
+  },
+  {
+    "source_order": 16,
+    "year": 2024,
+    "type": "award",
+    "title": "What the Harm? Quantifying the Tangible Impact of Gender Bias in Machine Translation with a Human-centered Study",
+    "authors": "Beatrice Savoldi, Sara Papi, Matteo Negri, Ana Guerberof Arenas, Luisa Bentivogli",
+    "venue": "EMNLP 2024 Social Impact Paper Award",
+    "url": "https://aclanthology.org/2024.emnlp-main.1002/"
+  },
+  {
+    "source_order": 17,
+    "year": 2024,
+    "type": "conf",
+    "title": "Findings of the Quality Estimation Shared Task at WMT 2024: Are LLMs Closing the Gap in QE?",
+    "authors": "Chrysoula Zerva, Frédéric Blain, José GC de Souza, Diptesh Kanojia, Sourabh Deoghare, Nuno M Guerreiro, Giuseppe Attanasio, Ricardo Rei, Constantin Orasan, Matteo Negri, Marco Turchi, Rajen Chatterjee, Pushpak Bhattacharyya, Markus Freitag, André FT Martins",
+    "venue": "WMT 2024",
+    "url": "https://aclanthology.org/2024.wmt-1.3/"
+  },
+  {
+    "source_order": 18,
+    "year": 2024,
+    "type": "conf",
+    "title": "MAGNET - MAchines GeNErating Translations: A CALAMITA Challenge",
+    "authors": "Mauro Cettolo, Andrea Piergentili, Sara Papi, Marco Gaido, Matteo Negri, Luisa Bentivogli",
+    "venue": "CLiC-it 2024",
+    "url": "https://aclanthology.org/2024.clicit-1.120/"
+  },
+  {
+    "source_order": 19,
+    "year": 2024,
+    "type": "conf",
+    "title": "GFG - Gender-Fair Generation: A CALAMITA Challenge",
+    "authors": "Simona Frenda, Andrea Piergentili, Beatrice Savoldi, Marco Madeddu, Martina Rosola, Silvia Casola, Chiara Ferrando, Viviana Patti, Matteo Negri, Luisa Bentivogli",
+    "venue": "CLiC-it 2024",
+    "url": "https://aclanthology.org/2024.clicit-1.122/"
+  },
+  {
+    "source_order": 20,
+    "year": 2024,
+    "type": "conf",
+    "title": "Explainability for Speech Models: On the Challenges of Acoustic Feature Selection",
+    "authors": "Dennis Fucci, Beatrice Savoldi, Marco Gaido, Matteo Negri, Mauro Cettolo, Luisa Bentivogli",
+    "venue": "CLiC-it 2024",
+    "url": "https://aclanthology.org/2024.clicit-1.45/"
+  },
+  {
+    "source_order": 21,
+    "year": 2024,
+    "type": "other",
+    "title": "Talking Heads: Bootstrapping Pre-trained LLMs to Build an End-to-End Speech Foundation Model",
+    "authors": "Pierfrancesco Melucci, Stefano Perna, Francesco Verdini, Francesco Cariaggi",
+    "venue": "GenAI Autumn School 2024, Université Paris-Saclay",
+    "url": ""
+  },
+  {
+    "source_order": 22,
+    "year": 2025,
+    "type": "journal",
+    "title": "A decade of gender bias in Machine Translation",
+    "authors": "Beatrice Savoldi, Jasmin Bastings, Luisa Bentivogli, Eva Vanmassenhove",
+    "venue": "Patterns 2025",
+    "url": "https://www.cell.com/patterns/fulltext/S2666-3899(25)00105-9"
+  },
+  {
+    "source_order": 23,
+    "year": 2025,
+    "type": "conf",
+    "title": "How do Multimodal Foundation Models Encode Text and Speech? An Analysis of Cross-Lingual and Cross-Modal Representations",
+    "authors": "Hyunji Lee, Danni Liu, Supriti Sinhamahapatra, Jan Niehues",
+    "venue": "NAACL 2025",
+    "url": "https://aclanthology.org/2025.naacl-short.51/"
+  },
+  {
+    "source_order": 24,
+    "year": 2025,
+    "type": "conf",
+    "title": "Cross-lingual Evaluation of Multilingual Text Generation",
+    "authors": "Shamil Chollampatt, Minh Quang Pham, Sathish Reddy Indurthi, Marco Turchi",
+    "venue": "COLING 2025",
+    "url": "https://aclanthology.org/2025.coling-main.520/"
+  },
+  {
+    "source_order": 25,
+    "year": 2025,
+    "type": "conf",
+    "title": "Speech Foundation Models and Crowdsourcing for Efficient, High-Quality Data Collection",
+    "authors": "Beomseok Lee, Marco Gaido, Ioan Calapodescu, Laurent Besacier, Matteo Negri",
+    "venue": "COLING 2025",
+    "url": "https://aclanthology.org/2025.coling-main.455/"
+  },
+  {
+    "source_order": 26,
+    "year": 2025,
+    "type": "conf",
+    "title": "Continuously Learning New Words in Automatic Speech Recognition",
+    "authors": "Christian Huber, Alexander Waibel",
+    "venue": "ICASSP 2025",
+    "url": "https://ieeexplore.ieee.org/document/10889216/"
+  },
+  {
+    "source_order": 27,
+    "year": 2025,
+    "type": "conf",
+    "title": "MSA-ASR: Efficient Multilingual Speaker Attribution with Frozen ASR Models",
+    "authors": "Thai-Binh Nguyen, Alexander Waibel",
+    "venue": "ICASSP 2025",
+    "url": "https://ieeexplore.ieee.org/document/10889116/"
+  },
+  {
+    "source_order": 28,
+    "year": 2025,
+    "type": "conf",
+    "title": "PIER: A Novel Metric for Evaluating What Matters in Code-Switching",
+    "authors": "Enes Yavuz Ugan, Ngoc-Quan Pham, Leonard Bärmann, Alex Waibel",
+    "venue": "ICASSP 2025",
+    "url": "https://publikationen.bibliothek.kit.edu/1000184471"
+  },
+  {
+    "source_order": 29,
+    "year": 2025,
+    "type": "conf",
+    "title": "A Bayesian Optimization Approach to Machine Translation Reranking",
+    "authors": "Julius Cheng, Maike Züfle, Vilém Zouhar, Andreas Vlachos",
+    "venue": "NAACL 2025 Main",
+    "url": "https://aclanthology.org/2025.naacl-long.145/"
+  },
+  {
+    "source_order": 30,
+    "year": 2025,
+    "type": "conf",
+    "title": "Prepending or Cross-Attention for Speech-to-Text? An Empirical Comparison",
+    "authors": "Tsz Kin Lam*, Marco Gaido*, Sara Papi, Luisa Bentivogli, Barry Haddow",
+    "venue": "NAACL 2025 Main",
+    "url": "https://aclanthology.org/2025.naacl-long.153/"
+  },
+  {
+    "source_order": 31,
+    "year": 2025,
+    "type": "conf",
+    "title": "Factorized-VITS: Decoupling Prosody and Text in End-to-End Speech Synthesis without External or Secondary Aligner",
+    "authors": "Yining Liu, Alexander Waibel",
+    "venue": "ICASSP 2025",
+    "url": "https://ieeexplore.ieee.org/document/10890003/"
+  },
+  {
+    "source_order": 32,
+    "year": 2025,
+    "type": "journal",
+    "title": "How “Real” is Your Real-Time Simultaneous Speech-to-Text Translation System?",
+    "authors": "Sara Papi, Peter Polak, Dominik Macheck, Ondrej Bojar",
+    "venue": "TACL 2025",
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00740/128861/How-Real-is-Your-Real-Time-Simultaneous-Speech-to"
+  },
+  {
+    "source_order": 33,
+    "year": 2025,
+    "type": "conf",
+    "title": "Contrastive Learning for Task-Independent SpeechLLM-Pretraining",
+    "authors": "Maike Züfle, Jan Niehues",
+    "venue": "ACL 2025 Findings",
+    "url": "https://aclanthology.org/2025.findings-acl.445/"
+  },
+  {
+    "source_order": 34,
+    "year": 2025,
+    "type": "conf",
+    "title": "NUTSHELL: A Dataset for Abstract Generation from Scientific Talks",
+    "authors": "Maike Züfle, Sara Papi, Beatrice Savoldi, Marco Gaido, Luisa Bentivogli, Jan Niehues",
+    "venue": "IWSLT 2025",
+    "url": "https://aclanthology.org/2025.iwslt-1.2/"
+  },
+  {
+    "source_order": 35,
+    "year": 2026,
+    "type": "preprint",
+    "title": "Early-Exit and Instant Confidence Translation Quality Estimation",
+    "authors": "Vilém Zouhar, Maike Züfle, Beni Egressy, Julius Cheng, Jan Niehues",
+    "venue": "Accepted to EACL 2026",
+    "url": "https://arxiv.org/abs/2502.14429"
+  },
+  {
+    "source_order": 36,
+    "year": 2025,
+    "type": "conf",
+    "title": "KIT's Offline Speech Translation and Instruction Following Submission for IWSLT 2025",
+    "authors": "Sai Koneru*, Maike Züfle*, Thai-Binh Nguyen, Seymanur Akti, Jan Niehues, Alexander Waibel",
+    "venue": "IWSLT 2025",
+    "url": "https://aclanthology.org/2025.iwslt-1.22/"
+  },
+  {
+    "source_order": 37,
+    "year": 2026,
+    "type": "conf",
+    "title": "MCIF: Multimodal Crosslingual Instruction-Following Benchmark from Scientific Talks",
+    "authors": "Sara Papi, Maike Züfle, Marco Gaido, Beatrice Savoldi, Danni Liu, Ioannis Douros, Luisa Bentivogli, Jan Niehues",
+    "venue": "ICLR 2026",
+    "url": "https://openreview.net/forum?id=PtPYZYfa0h"
+  },
+  {
+    "source_order": 38,
+    "year": 2025,
+    "type": "conf",
+    "title": "An LLM-as-a-judge Approach for Scalable Gender-Neutral Translation Evaluation",
+    "authors": "Andrea Piergentili, Beatrice Savoldi, Matteo Negri, Luisa Bentivogli",
+    "venue": "GITT Workshop @ MT-Summit 2025",
+    "url": "https://aclanthology.org/2025.gitt-1.3/"
+  },
+  {
+    "source_order": 39,
+    "year": 2025,
+    "type": "conf",
+    "title": "Different Speech Translation Models Encode and Translate Speaker Gender Differently",
+    "authors": "Dennis Fucci, Marco Gaido, Matteo Negri, Luisa Bentivogli, André Martins, Giuseppe Attanasio",
+    "venue": "ACL 2025 Main",
+    "url": "https://aclanthology.org/2025.acl-short.78/"
+  },
+  {
+    "source_order": 40,
+    "year": 2025,
+    "type": "conf",
+    "title": "How to Connect Speech Foundation Models and Large Language Models? What Matters and What Does Not",
+    "authors": "Francesco Verdini, Pierfrancesco Melucci, Stefano Perna, Francesco Cariaggi, et al.",
+    "venue": "Interspeech 2025",
+    "url": "https://www.isca-archive.org/interspeech_2025/verdini25_interspeech.html"
+  },
+  {
+    "source_order": 41,
+    "year": 2025,
+    "type": "conf",
+    "title": "Translation in the Hands of Many: Centering Lay Users in Machine Translation Interactions",
+    "authors": "Beatrice Savoldi, Alan Ramponi, Matteo Negri, Luisa Bentivogli",
+    "venue": "EMNLP 2025 Main",
+    "url": "https://aclanthology.org/2025.emnlp-main.700/"
+  },
+  {
+    "source_order": 42,
+    "year": 2025,
+    "type": "conf",
+    "title": "Summarizing Speech: A Comprehensive Survey",
+    "authors": "Fabian Retkowski, Maike Züfle, Andreas Sudmann, Dinah Pfau, Shinji Watanabe, Jan Niehues, Alexander Waibel",
+    "venue": "EMNLP 2025 Main",
+    "url": "https://aclanthology.org/2025.emnlp-main.1388/"
+  },
+  {
+    "source_order": 43,
+    "year": 2025,
+    "type": "preprint",
+    "title": "Policies and Evaluation for Online Meeting Summarization",
+    "authors": "Felix Schneider, Marco Turchi, Alex Waibel",
+    "venue": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2502.03111"
+  },
+  {
+    "source_order": 44,
+    "year": 2025,
+    "type": "conf",
+    "title": "The Warmup Dilemma: How Learning Rate Strategies Impact Speech-to-Text Model Convergence",
+    "authors": "Marco Gaido*, Sara Papi*, Luisa Bentivogli, Alessio Brutti, Mauro Cettolo, Roberto Gretter, Marco Matassoni, Mohamed Nabih, Matteo Negri",
+    "venue": "IWSLT 2025",
+    "url": "https://aclanthology.org/2025.iwslt-1.4/"
+  },
+  {
+    "source_order": 45,
+    "year": 2025,
+    "type": "conf",
+    "title": "FAMA: The First Large-Scale Open-Science Speech Foundation Model for Italian and English",
+    "authors": "Sara Papi*, Marco Gaido*, Luisa Bentivogli, Alessio Brutti, Mauro Cettolo, Roberto Gretter, Marco Matassoni, Mohamed Nabih, Matteo Negri",
+    "venue": "CLiC-it 2025",
+    "url": "https://cris.fbk.eu/handle/11582/363549"
+  },
+  {
+    "source_order": 46,
+    "year": 2025,
+    "type": "conf",
+    "title": "Cocktail-Party Audio-Visual Speech Recognition",
+    "authors": "Thai-Binh Nguyen, Ngoc-Quan Pham, Alexander Waibel",
+    "venue": "Interspeech 2025",
+    "url": "https://www.isca-archive.org/interspeech_2025/nguyen25b_interspeech.html"
+  },
+  {
+    "source_order": 47,
+    "year": 2025,
+    "type": "conf",
+    "title": "Findings of the IWSLT 2025 Evaluation Campaign",
+    "authors": "Idris Abdulmumin, Victor Agostinelli, Tanel Alumäe, Antonios Anastasopoulos, Luisa Bentivogli, Ondřej Bojar, Claudia Borg, Fethi Bougares, Roldano Cattoni, Mauro Cettolo, Lizhong Chen, William Chen, Raj Dabre, Yannick Estève, Marcello Federico, Mark Fishel, Marco Gaido, Dávid Javorský, Marek Kasztelnik, Fortuné Kponou, Mateusz Krubiński, Tsz Kin Lam, Danni Liu, Evgeny Matusov, Chandresh Kumar Maurya, John P. McCrae, Salima Mdhaffar, Yasmin Moslem, Kenton Murray, Satoshi Nakamura, Matteo Negri, Jan Niehues, Atul Kr. Ojha, John E. Ortega, Sara Papi, Pavel Pecina, Peter Polák, Piotr Połeć, Ashwin Sankar, Beatrice Savoldi, Nivedita Sethiya, Claytone Sikasote, Matthias Sperber, Sebastian Stüker, Katsuhito Sudoh, Brian Thompson, Marco Turchi, Alex Waibel, Patrick Wilken, Rodolfo Zevallos, Vilém Zouhar, Maike Züfle",
+    "venue": "IWSLT 2025",
+    "url": "https://aclanthology.org/2025.iwslt-1.44/"
+  },
+  {
+    "source_order": 48,
+    "year": 2024,
+    "type": "conf",
+    "title": "Impact of Face Alignment on Face Image Quality",
+    "authors": "Eren Onaran, Erdi Sarıtaş, Hazım Kemal Ekenel",
+    "venue": "EAI ROSENET 2024",
+    "url": "https://arxiv.org/abs/2412.11779"
+  },
+  {
+    "source_order": 49,
+    "year": 2025,
+    "type": "preprint",
+    "title": "Facial Attribute Based Text Guided Face Anonymization",
+    "authors": "Mustafa İzzet Muştu, Hazım Kemal Ekenel",
+    "venue": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2505.21002"
+  },
+  {
+    "source_order": 50,
+    "year": 2025,
+    "type": "conf",
+    "title": "Assessing the Use of Face Swapping Methods as Face Anonymizers in Videos",
+    "authors": "Mustafa İzzet Muştu, Hazım Kemal Ekenel",
+    "venue": "DSP 2025",
+    "url": "https://research.itu.edu.tr/en/publications/assessing-the-use-of-face-swapping-methods-as-face-anonymizers-in/"
+  },
+  {
+    "source_order": 51,
+    "year": 2025,
+    "type": "conf",
+    "title": "Weight Factorization and Centralization for Continual Learning in Speech Recognition",
+    "authors": "Enes Yavuz Ugan, Ngoc-Quan Pham, Alexander Waibel",
+    "venue": "Interspeech 2025",
+    "url": "https://www.isca-archive.org/interspeech_2025/ugan25_interspeech.html"
+  },
+  {
+    "source_order": 52,
+    "year": 2025,
+    "type": "conf",
+    "title": "Towards Better Disentanglement in Non-Autoregressive Zero-Shot Expressive Voice Conversion",
+    "authors": "Şeymanur Akti, Tuan-Nam Nguyen, Alexander Waibel",
+    "venue": "Interspeech 2025",
+    "url": "https://www.isca-archive.org/interspeech_2025/akti25_interspeech.html"
+  },
+  {
+    "source_order": 53,
+    "year": 2025,
+    "type": "conf",
+    "title": "Streaming Non-Autoregressive Model for Accent Conversion and Pronunciation Improvement",
+    "authors": "Tuan-Nam Nguyen, Ngoc-Quan Pham, Şeymanur Akti, Alexander Waibel",
+    "venue": "Interspeech 2025",
+    "url": "https://www.isca-archive.org/interspeech_2025/nguyen25c_interspeech.html"
+  },
+  {
+    "source_order": 54,
+    "year": 2025,
+    "type": "conf",
+    "title": "Are Generative Models Underconfident? Better Quality Estimation with Boosted Model Probability",
+    "authors": "Tu Anh Dinh, Jan Niehues",
+    "venue": "EMNLP 2025 Main",
+    "url": "https://aclanthology.org/2025.emnlp-main.166/"
+  },
+  {
+    "source_order": 55,
+    "year": 2025,
+    "type": "conf",
+    "title": "COMET-poly: Machine Translation Metric Grounded in Other Candidates",
+    "authors": "Maike Züfle*, Vilém Zouhar*, Tu Anh Dinh, Felipe Maia Polo, Jan Niehues, Mrinmaya Sachan",
+    "venue": "WMT @ EMNLP 2025",
+    "url": "https://aclanthology.org/2025.wmt-1.63/"
+  },
+  {
+    "source_order": 56,
+    "year": 2025,
+    "type": "preprint",
+    "title": "Cross-Attention is Half Explanation in Speech-to-Text Models",
+    "authors": "Sara Papi, Dennis Fucci, Marco Gaido, Matteo Negri, Luisa Bentivogli",
+    "venue": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2509.18010"
+  },
+  {
+    "source_order": 57,
+    "year": 2025,
+    "type": "preprint",
+    "title": "Better Late Than Never: Evaluation of Latency Metrics for Simultaneous Speech-to-Text Translation",
+    "authors": "Peter Polák, Sara Papi, Luisa Bentivogli, Ondřej Bojar",
+    "venue": "Under review",
+    "url": "https://openreview.net/forum?id=R0SpnXd12S"
+  },
+  {
+    "source_order": 58,
+    "year": 2025,
+    "type": "journal",
+    "title": "Federating dynamic models using early-exit architectures for automatic speech recognition on heterogeneous clients",
+    "authors": "Mohamed Nabih Ali, Daniele Falavigna, Alessio Brutti",
+    "venue": "Progress in Artificial Intelligence (2025)",
+    "url": "https://link.springer.com/article/10.1007/s13748-025-00412-w"
+  },
+  {
+    "source_order": 59,
+    "year": 2026,
+    "type": "preprint",
+    "title": "MuSaG: A Multimodal German Sarcasm Dataset with Full-Modal Annotations",
+    "authors": "A. Scott, Maike Züfle, Jan Niehues",
+    "venue": "Accepted to LREC 2026",
+    "url": "https://arxiv.org/abs/2510.24178"
+  },
+  {
+    "source_order": 60,
+    "year": 2026,
+    "type": "preprint",
+    "title": "Talk2Ref: A Dataset for Reference Prediction from Scientific Talks",
+    "authors": "F. Broy, Maike Züfle, Jan Niehues",
+    "venue": "Accepted to LREC 2026",
+    "url": "https://arxiv.org/abs/2510.24478"
+  },
+  {
+    "source_order": 61,
+    "year": 2026,
+    "type": "conf",
+    "title": "Using weak supervision for low resource ASR: a phonetic-based transcript selection",
+    "authors": "Roberto Gretter, Marco Matassoni, Daniele Falavigna, Mohamed Nabih Nawar, Alessio Brutti, Luisa Bentivogli, Mauro Cettolo, Marco Gaido, Matteo Negri, Sara Papi",
+    "venue": "Accepted to LREC 2026",
+    "url": ""
+  },
+  {
+    "source_order": 62,
+    "year": 2026,
+    "type": "conf",
+    "title": "Voice, Bias, and Coreference: An Interpretability Study of Gender in Speech Translation",
+    "authors": "Lina Conti, Dennis Fucci, Marco Gaido, Matteo Negri, Guillaume Wisniewski, Luisa Bentivogli",
+    "venue": "Accepted to LREC 2026",
+    "url": ""
+  },
+  {
+    "source_order": 63,
+    "year": 2025,
+    "type": "preprint",
+    "title": "Hearing to Translate: The Effectiveness of Speech Modality Integration into LLMs",
+    "authors": "Sara Papi, Javier Garcia Gilabert, Zachary Hopton, Vilém Zouhar, Carlos Escolano, Gerard I. Gállego, Jorge Iranzo-Sánchez, Ahrii Kim, Dominik Macháček, Patricia Schmidtova, Maike Züfle",
+    "venue": "Accepted to TACL",
+    "url": "https://arxiv.org/abs/2512.16378"
+  },
+  {
+    "source_order": 64,
+    "year": 2026,
+    "type": "preprint",
+    "title": "F-Actor: Controllable Conversational Behaviour in Full-Duplex Models",
+    "authors": "Maike Züfle, Ondrej Klejch, Nicholas Sanders, Jan Niehues, Alexandra Birch, Tsz Kin Lam",
+    "venue": "Under review",
+    "url": "https://arxiv.org/abs/2601.11329"
+  },
+  {
+    "source_order": 65,
+    "year": 2026,
+    "type": "preprint",
+    "title": "Beyond Transcripts: A Renewed Perspective on Audio Chaptering",
+    "authors": "Fabian Retkowski, Maike Züfle, Thai Binh Nguyen, Jan Niehues, Alexander Waibel",
+    "venue": "Under review",
+    "url": "https://arxiv.org/abs/2602.08979"
+  },
+  {
+    "source_order": 66,
+    "year": 2026,
+    "type": "preprint",
+    "title": "Do What I Say: A Spoken Prompt Dataset for Instruction-Following",
+    "authors": "Maike Züfle, Sara Papi, Fabian Retkowski, Szymon Mazurek, Marek Kasztelnik, Alexander Waibel, Luisa Bentivogli, Jan Niehues",
+    "venue": "Under review",
+    "url": "https://arxiv.org/abs/2603.09881"
+  }
+]

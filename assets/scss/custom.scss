@@ -1,1 +1,186 @@
-// Add your own custom styles here
+.publications-page {
+  .content {
+    margin-bottom: 1.5rem;
+  }
+
+  .pub-legend {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+    font-size: 0.8rem;
+    color: #555;
+  }
+
+  .pub-legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+  }
+
+  .pub-legend-dot {
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 999px;
+    flex-shrink: 0;
+  }
+
+  .dot-conf { background: #1a56db; }
+  .dot-journal { background: #1f7a3d; }
+  .dot-preprint { background: #7b8190; }
+  .dot-award { background: #b26b00; }
+  .dot-other { background: #6b4fd3; }
+
+  .pub-total-count {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.9rem;
+  }
+
+  .pub-controls {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .pub-filter-btn {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .pub-filter-btn:hover {
+    background: #f5f5f5;
+    border-color: #bbb;
+  }
+
+  .pub-filter-btn.active {
+    background: #e8f0fe;
+    border-color: #b3c6f7;
+    color: #1a56db;
+  }
+
+  .pub-year-group {
+    margin-bottom: 2.25rem;
+  }
+
+  .pub-year-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid #e8e8e8;
+    color: #888;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .pub-year-count {
+    background: #f0f0f0;
+    color: #888;
+    border-radius: 999px;
+    padding: 0.05rem 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .pub-item {
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .pub-item:last-child {
+    border-bottom: 0;
+  }
+
+  .pub-badge {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    border-radius: 999px;
+    padding: 0.18rem 0.65rem;
+    font-size: 0.72rem;
+    font-weight: 500;
+    margin-top: 0.1rem;
+  }
+
+  .v-conf {
+    background: #e8f0fe;
+    color: #1a56db;
+  }
+
+  .v-journal {
+    background: #e6f4ea;
+    color: #1f7a3d;
+  }
+
+  .v-preprint {
+    background: #f2f3f5;
+    color: #60656f;
+  }
+
+  .v-award {
+    background: #fff1dc;
+    color: #a15f00;
+  }
+
+  .v-other {
+    background: #efe9ff;
+    color: #6b4fd3;
+  }
+
+  .pub-body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .pub-title {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #1a1a1a;
+  }
+
+  .pub-title a {
+    color: #1a56db;
+    text-decoration: none;
+  }
+
+  .pub-title a:hover {
+    text-decoration: underline;
+  }
+
+  .pub-authors {
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: #555;
+  }
+
+  .pub-venue-text {
+    margin-top: 0.12rem;
+    font-size: 0.78rem;
+    color: #8f8f8f;
+  }
+}
+
+@media (max-width: 767px) {
+  .publications-page {
+    .pub-item {
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+  }
+}
