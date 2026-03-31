@@ -1,13 +1,38 @@
 {{ define "main" }}
 {{ partial "page-header" . }}
+{{ $events := sort site.Data.dissemination "date" "desc" }}
 <section class="section-sm">
   <div class="container">
     <div class="row justify-center">
-      <div class="md:col-10 lg:col-7">
-        <!-- <h2 class="h3 mb-6">{{ .Title }}</h2> -->
-        <!-- {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mx-auto mb-6" "Size" "324x81") }} -->
-        <div class="content">{{ .Content }}</div>
+      <div class="md:col-10 lg:col-9 xl:col-8">
+        <div class="dissemination-page">
+          <div class="content">{{ .Content }}</div>
+          <div class="diss-total-count">{{ len $events }} activities</div>
+
+          {{ $scratch := newScratch }}
+          {{ range $events }}
+            {{ $year := .year }}
+            {{ if ne ($scratch.Get "year") $year }}
+              {{ if $scratch.Get "open-group" }}</div></section>{{ end }}
+              <section class="diss-year-group">
+                <div class="diss-year-label">{{ $year }}</div>
+                <div class="diss-events">
+              {{ $scratch.Set "year" $year }}
+              {{ $scratch.Set "open-group" true }}
+            {{ end }}
+
+            <article class="diss-item">
+              <div class="diss-date">{{ time.AsTime .date | time.Format ":date_medium" }}</div>
+              <div class="diss-body">
+                <div class="diss-location">{{ .location }}</div>
+                <div class="diss-description">{{ .description | markdownify }}</div>
+              </div>
+            </article>
+          {{ end }}
+
+          {{ if $scratch.Get "open-group" }}</div></section>{{ end }}
+        </div>
       </div>
     </div>
   </div>
-</section> {{ end }} 
+</section> {{ end }}

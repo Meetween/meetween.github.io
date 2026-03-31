@@ -184,3 +184,91 @@
     }
   }
 }
+
+.dissemination-page {
+  .content {
+    margin-bottom: 1.25rem;
+  }
+
+  .diss-total-count {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+
+  .diss-year-group {
+    margin-bottom: 2.25rem;
+  }
+
+  .diss-year-label {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.85rem;
+    border-bottom: 1px solid #e8e8e8;
+    color: #888;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .diss-item {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    gap: 1rem;
+    align-items: start;
+    padding: 0.95rem 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .diss-item:last-child {
+    border-bottom: 0;
+  }
+
+  .diss-date {
+    display: inline-flex;
+    align-self: start;
+    justify-content: center;
+    padding: 0.28rem 0.7rem;
+    border-radius: 999px;
+    background: #eef4ff;
+    color: #2859b8;
+    font-size: 0.76rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .diss-location {
+    margin-bottom: 0.22rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #555;
+  }
+
+  .diss-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #1a1a1a;
+  }
+
+  .diss-description p {
+    margin: 0;
+  }
+
+  .diss-description a {
+    color: #1a56db;
+    text-decoration: none;
+  }
+
+  .diss-description a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 767px) {
+  .dissemination-page {
+    .diss-item {
+      grid-template-columns: 1fr;
+      gap: 0.55rem;
+    }
+  }
+}
