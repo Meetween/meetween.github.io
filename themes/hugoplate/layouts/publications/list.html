@@ -1,6 +1,13 @@
 {{ define "main" }}
 {{ partial "page-header" . }}
 {{ $publications := site.Data.publications }}
+{{ $years := slice }}
+{{ range $publications }}
+  {{ if not (in $years .year) }}
+    {{ $years = $years | append .year }}
+  {{ end }}
+{{ end }}
+{{ $years = sort $years "value" "desc" }}
 <section class="section-sm">
   <div class="container">
     <div class="row justify-center">
@@ -46,7 +53,55 @@
             <button class="pub-filter-btn" type="button" data-filter="other">Other</button>
           </div>
 
-          <div id="publications-list"></div>
+          <div id="publications-list">
+            {{ range $years }}
+              {{ $year := . }}
+              {{ $yearPublications := where $publications "year" $year }}
+              <section class="pub-year-group" data-year="{{ $year }}">
+                <div class="pub-year-label">
+                  <span>{{ $year }}</span>
+                  <span class="pub-year-count">{{ len $yearPublications }}</span>
+                </div>
+
+                {{ range sort $yearPublications "source_order" "desc" }}
+                  {{ $badgeLabel := "Preprint" }}
+                  {{ $badgeClass := "v-preprint" }}
+                  {{ if eq .type "conf" }}
+                    {{ $badgeLabel = "Conference" }}
+                    {{ $badgeClass = "v-conf" }}
+                  {{ else if eq .type "journal" }}
+                    {{ $badgeLabel = "Journal" }}
+                    {{ $badgeClass = "v-journal" }}
+                  {{ else if eq .type "award" }}
+                    {{ $badgeLabel = "Award" }}
+                    {{ $badgeClass = "v-award" }}
+                  {{ else if eq .type "other" }}
+                    {{ $badgeLabel = "Other" }}
+                    {{ $badgeClass = "v-other" }}
+                  {{ end }}
+
+                  <article class="pub-item" data-type="{{ .type }}" data-year="{{ .year }}">
+                    <span class="pub-badge {{ $badgeClass }}">{{ $badgeLabel }}</span>
+                    <div class="pub-body">
+                      <div class="pub-title">
+                        {{ if .url }}
+                          <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
+                        {{ else }}
+                          {{ .title }}
+                        {{ end }}
+                      </div>
+                      {{ with .authors }}
+                        <div class="pub-authors">{{ . }}</div>
+                      {{ end }}
+                      {{ with .venue }}
+                        <div class="pub-venue-text">{{ . }}</div>
+                      {{ end }}
+                    </div>
+                  </article>
+                {{ end }}
+              </section>
+            {{ end }}
+          </div>
         </div>
       </div>
     </div>
@@ -54,70 +109,27 @@
 </section>
 
 <script>
-  const publicationsData = {{ $publications | jsonify | safeJS }};
   let currentPublicationFilter = "all";
-
-  const badgeMap = {
-    conf: { label: "Conference", className: "v-conf" },
-    journal: { label: "Journal", className: "v-journal" },
-    preprint: { label: "Preprint", className: "v-preprint" },
-    award: { label: "Award", className: "v-award" },
-    other: { label: "Other", className: "v-other" }
-  };
-
-  const sortedPublications = [...publicationsData].sort((a, b) => {
-    if (a.year !== b.year) return b.year - a.year;
-    return b.source_order - a.source_order;
-  });
-
-  function publicationTitleHtml(publication) {
-    const title = publication.title;
-    if (!publication.url) return title;
-    return `<a href="${publication.url}" target="_blank" rel="noopener">${title}</a>`;
-  }
-
-  function publicationMetaHtml(publication) {
-    const parts = [];
-    if (publication.authors) parts.push(`<div class="pub-authors">${publication.authors}</div>`);
-    if (publication.venue) parts.push(`<div class="pub-venue-text">${publication.venue}</div>`);
-    return parts.join("");
-  }
+  const publicationItems = Array.from(document.querySelectorAll(".pub-item"));
+  const publicationGroups = Array.from(document.querySelectorAll(".pub-year-group"));
+  const totalLabel = document.getElementById("publications-total");
 
   function renderPublications() {
-    const filtered = currentPublicationFilter === "all"
-      ? sortedPublications
-      : sortedPublications.filter((publication) => publication.type === currentPublicationFilter);
+    let visibleCount = 0;
 
-    document.getElementById("publications-total").textContent =
-      `${filtered.length} ${filtered.length === 1 ? "entry" : "entries"}`;
+    publicationItems.forEach((item) => {
+      const matches = currentPublicationFilter === "all" || item.dataset.type === currentPublicationFilter;
+      item.style.display = matches ? "" : "none";
+      if (matches) visibleCount += 1;
+    });
 
-    const years = [...new Set(filtered.map((publication) => publication.year))];
-    const list = document.getElementById("publications-list");
-    list.innerHTML = "";
+    totalLabel.textContent = `${visibleCount} ${visibleCount === 1 ? "entry" : "entries"}`;
 
-    years.forEach((year) => {
-      const yearItems = filtered.filter((publication) => publication.year === year);
-      const yearGroup = document.createElement("section");
-      yearGroup.className = "pub-year-group";
-      yearGroup.innerHTML = `
-        <div class="pub-year-label">
-          <span>${year}</span>
-          <span class="pub-year-count">${yearItems.length}</span>
-        </div>
-        ${yearItems.map((publication) => {
-          const badge = badgeMap[publication.type] || badgeMap.preprint;
-          return `
-            <article class="pub-item">
-              <span class="pub-badge ${badge.className}">${badge.label}</span>
-              <div class="pub-body">
-                <div class="pub-title">${publicationTitleHtml(publication)}</div>
-                ${publicationMetaHtml(publication)}
-              </div>
-            </article>
-          `;
-        }).join("")}
-      `;
-      list.appendChild(yearGroup);
+    publicationGroups.forEach((group) => {
+      const visibleItems = Array.from(group.querySelectorAll(".pub-item")).filter((item) => item.style.display !== "none");
+      group.style.display = visibleItems.length === 0 ? "none" : "";
+      const countLabel = group.querySelector(".pub-year-count");
+      if (countLabel) countLabel.textContent = visibleItems.length;
     });
   }
 
